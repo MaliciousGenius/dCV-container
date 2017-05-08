@@ -1,0 +1,19 @@
+version: "3.1"
+
+services:
+  bootstrapper:
+    build:
+      context: ../
+      dockerfile: docker/Dockerfile
+    command: ansible --version
+    environment:
+      - ENV_DOMAIN=udkb.ru
+    networks:
+      - external
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock:ro
+    deploy:
+      replicas: 1
+
+networks:
+  external:
