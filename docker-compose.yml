@@ -5,6 +5,6 @@ services:
     build:
       context: Mothership
       dockerfile: Dockerfile
-    env_file: .env
+    env_file: ./Mothership/.env
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock:ro
