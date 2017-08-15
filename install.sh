@@ -1,10 +1,11 @@
 #!/bin/bash
 
 sudo apt-get update
-sudo apt-get install \
+sudo apt-get install -y \
     apt-transport-https \
     ca-certificates \
     software-properties-common \
+    git \
     curl
 
 sudo curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
