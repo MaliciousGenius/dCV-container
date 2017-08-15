@@ -3,8 +3,8 @@ version: "3.1"
 services:
   mothership:
     build:
-      context: ./Mothership/
-      dockerfile: ./Mothership/Dockerfile
-    env_file: ./Mothership/.env
+      context: Mothership
+      dockerfile: Dockerfile
+    env_file: .env
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock:ro
