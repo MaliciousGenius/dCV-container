@@ -2,11 +2,16 @@
 
 Этот проект посвящён автоматизации развертывания кластера контейнеров.
 
-<h4> Установка </h4>
+<h4> Установка локально в виртульной машине </h4>
+
+1) git clone https://github.com/MaliciousGenius/udkbSwarm.git
+2) cd dSwarm && sudo vagrant up
+
+<h4> Установка проде </h4>
 
 1) sudo apt-get update && sudo apt-get install -y git
-2) git clone https://github.com/MaliciousGenius/udkbSwarm.git
-3) cd udkbSwarm && chmod +x ./install.sh
+2) git clone https://github.com/MaliciousGenius/dSwarm.git
+3) cd dSwarm && chmod +x ./install.sh
 4) ./install.sh
 
 ---
